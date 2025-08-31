@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center p-4 bg-blue-600 text-white">
-      <h1 className="text-2xl font-bold">TravelAgency</h1>
-      <div className="space-x-4">
-        <a href="#home">Home</a>
-        <a href="#packages">Packages</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
+    <nav className="w-full bg-black text-white fixed top-0 left-0 z-50 px-6 py-4 flex justify-between items-center">
+      <div className="text-2xl font-bold">Travel Agency</div>
+      <ul className="flex space-x-6">
+        <li>Home</li>
+        <li>Packages</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
     </nav>
   );
 };

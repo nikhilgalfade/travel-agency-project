@@ -1,14 +1,47 @@
-import React from 'react';
+import React from "react";
+import coverImg from "../../assets/cover.jpg";
+import "./Hero.css";
 
 const Hero = () => {
   return (
-    <section id="home" className="h-screen bg-[url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')] bg-cover bg-center flex items-center justify-center">
-      <div className="text-center text-white bg-black bg-opacity-40 p-8 rounded">
-        <h1 className="text-5xl font-bold mb-4">Explore the World</h1>
-        <p className="mb-6">Plan your perfect journey with us</p>
-        <button className="bg-blue-500 px-6 py-2 rounded hover:bg-blue-700">Start Planning</button>
-      </div>
-    </section>
+    <div className="hero-container">
+      {/* Hero Section */}
+      <section 
+        className="hero-section"
+        style={{ 
+          backgroundImage: `url(${coverImg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Content */}
+        <div className="hero-content">
+          <h1 className="hero-title">Let's Travel The World Together</h1>
+          <p className="hero-description">
+            Discover amazing places at exclusive deals. Make your travel memorable.
+          </p>
+          <div className="hero-actions">
+            <a href="#packages" className="hero-button">
+              Book Now
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Additional content to demonstrate scrolling */}
+      <section className="additional-content">
+        <div className="content-wrapper">
+          <h2>About Our Travel Agency</h2>
+          <p>
+            We specialize in creating unforgettable travel experiences. Whether you're looking for a relaxing beach getaway, an adventurous mountain trek, or a cultural city tour, we have the perfect package for you.
+          </p>
+          <p>
+            Our team of travel experts works tirelessly to find the best deals and create itineraries that maximize your enjoyment while minimizing stress. Let us handle the details so you can focus on making memories.
+          </p>
+        </div>
+      </section>
+    </div>
   );
 };
 

@@ -16,16 +16,22 @@ const Hero = () => {
         }}
       >
         {/* Content */}
-        <div className="hero-content">
-          <h1 className="hero-title">Let's Travel The World Together</h1>
+
+        <div className="hero-content  ">
+          <p className="hero-up">EXPERIENCE LUXURY TRAVEL</p>
+          <h1 className="hero-title  ">Explore the World  <br />Like Never Before</h1>
           <p className="hero-description">
-            Discover amazing places at exclusive deals. Make your travel memorable.
+           Curated journeys to the world's most extraordinary destinations. Let us transform <br /> your travel dreams into unforgettable memories.
           </p>
           <div className="hero-actions">
             <a href="#packages" className="hero-button">
-              Book Now
+              Start Planning
+            </a>
+             <a href="#packages" className="hero-button">
+              Watch Video
             </a>
           </div>
+          
         </div>
       </section>
 
@@ -34,7 +40,7 @@ const Hero = () => {
         <div className="content-wrapper">
           <h2>About Our Travel Agency</h2>
           <p>
-            We specialize in creating unforgettable travel experiences. Whether you're looking for a relaxing beach getaway, an adventurous mountain trek, or a cultural city tour, we have the perfect package for you.
+            We specialize in creating unforgettable  travel experiences. Whether you're looking for a relaxing beach getaway, an adventurous mountain trek, or a cultural city tour, we have the perfect package for you.
           </p>
           <p>
             Our team of travel experts works tirelessly to find the best deals and create itineraries that maximize your enjoyment while minimizing stress. Let us handle the details so you can focus on making memories.

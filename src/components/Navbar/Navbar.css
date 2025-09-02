@@ -1,0 +1,46 @@
+/* Navbar container */
+.navbar {
+  position: fixed;          /* stick to top */
+  top: 0;
+  left: 0;
+  width: 100%;              /* full width */
+  height: 70px;
+  
+  backdrop-filter: blur(6px);     /* blur effect */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  color: white;
+  z-index: 1000;
+  box-sizing: border-box;
+  backface-visibility: visible; /*transparent the thing in the navbar*/
+}
+
+/* Logo */
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 5%;
+}
+
+/* Menu items */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;   /* spacing between items */
+  margin: 0;
+  padding: 0;
+  
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ddd;
+}

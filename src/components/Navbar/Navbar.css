@@ -1,46 +1,65 @@
 /* Navbar container */
 .navbar {
-  position: fixed;          /* stick to top */
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;              /* full width */
+  width: 100%;
   height: 70px;
-  
-  backdrop-filter: blur(6px);     /* blur effect */
+
+  backdrop-filter: blur(6px);
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 30px;
   color: white;
+
   z-index: 1000;
   box-sizing: border-box;
-  backface-visibility: visible; /*transparent the thing in the navbar*/
 }
 
-/* Logo */
+/* Logo (stays left) */
 .navbar .logo {
   font-size: 24px;
   font-weight: bold;
   padding-left: 5%;
 }
 
+/* Make nav take full width and center its content */
+.navbar nav {
+  flex: 1;                  /* take available space */
+  display: flex;
+  justify-content: center;  /* center the ul */
+}
+
 /* Menu items */
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 25px;   /* spacing between items */
+  gap: 25px;
   margin: 0;
   padding: 0;
-  
 }
 
-.navbar ul li a {
-  color: white;
+.plan_trip{
+
+
+}
+.plan-button {
+  display: inline-block;
+  padding: 9px 25px;
+  background-color: revert;
+  color: #f9f9f9;
+  font-weight: 600;
+  border-radius: 8px;
   text-decoration: none;
-  font-size: 18px;
-  transition: 0.3s;
+  box-shadow: transparent;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+   display: inline-block;
+  gap: 20px;
+  margin-right: 60px;
 }
-
-.navbar ul li a:hover {
-  color: #ddd;
+.plan-button:hover {
+  background-color: #12b406;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }

@@ -1,19 +1,16 @@
 .hero-container {
-  width: 105%;
+  width: 100%;
 }
 
+/* Hero Section */
 .hero-section {
   height: 110vh;
   width: 100%;
-  background-image: url('../../assets/cover.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
-  align-items: center;       /* keeps it vertically centered */
-  justify-content: flex-start; /* pushes content to the left */
+  align-items: center;
+  justify-content: flex-start;
   position: relative;
-  padding-left: 60px;        /* add some breathing space from edge */
+  padding-left: 60px;
 }
 
 .hero-section::before {
@@ -35,71 +32,61 @@
   padding: 0 20px;
 }
 
-
 .hero-title {
-
-  -webkit-text-stroke: .5px black; /* thickness + stroke color */
-  text-stroke: .5px white;         /* for other browsers (less supported) */
-  text-align: left;
+  -webkit-text-stroke: .5px black;
   font-size: 4rem;
-  font-weight: bold;
+  font-weight: 900;
   margin-bottom: 1.5rem;
   line-height: 1.2;
-  font:
-  4.5rem "Fira Sans",
-  PTSerif;
-  font-weight: 900;
-  
 }
 
-.hero-description {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
+.typewriter-text {
+  color: #fdfdfd;
+  -webkit-text-stroke: 0.5px black;
+  font-weight: 900;
 }
-.hero-up{
+
+.hero-description, .hero-up {
   font-size: 1rem;
   margin-bottom: 1.5rem;
   opacity: 0.9;
 }
 
-.hero-button {
+.hero-actions .hero-button {
   display: inline-block;
   padding: 13px 30px;
-  background-color: revert;
+  background-color: transparent;
   color: #f9f9f9;
   font-weight: 600;
   border-radius: 8px;
   text-decoration: none;
-  box-shadow: transparent;
   border: 2px solid white;
+  margin-right: 20px;
   transition: all 0.3s ease;
-   display: inline-block;
-  gap: 20px;
-  margin-right: 60px;
 }
 
 .hero-button:hover {
-  background-color: #12b406;
+  background-color: #54add3;
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Additional Content Section */
 .additional-content {
   padding: 80px 20px;
   background-color: #f8fafc;
+  text-align: center;
 }
 
 .content-wrapper {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .content-wrapper h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1.5rem;
   color: #1e293b;
-  text-align: center;
 }
 
 .content-wrapper p {
@@ -109,42 +96,65 @@
   color: #475569;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;
-  }
-  
-  .hero-description {
-    font-size: 1.2rem;
-  }
-  
-  .content-wrapper h2 {
-    font-size: 2rem;
-  }
-}
-.typewriter-text {
-  color: #fdfdfd;         /* highlight typed text */
-  -webkit-text-stroke: 0.5px black;
-  font-weight: 900;
+/* Cards Section */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 40px;
 }
 
-
-
-
-.popular-destination{
-text-align: center;
-font-size: 32px;
-font-size: 2.5rem;  /* you can use px, rem, em, % */
-  font-weight: bold; /* optional, makes it thicker */
-
+.indian-destination-card {
+  background: #fff;
+  padding: 0;
+  border-radius: 35px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 20px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.handpick{
-text-align: center;
-font-size: 32px;  /* you can use px, rem, em, % */
-font-size: 2.5rem;  /* you can use px, rem, em, % */
+.indian-destination-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+}
 
-font-weight: bold; /* optional, makes it thicker */
+.indian-destination-card .card-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
 
+.indian-destination-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.indian-destination-card .stars {
+  color: #8e44ad; /* purple stars */
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.indian-destination-card .location-tag {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: #f3c6f4; /* soft pink */
+  color: #7b3fa0; /* dark purple */
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+}
+
+.indian-destination-card .price {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #64748b;
 }

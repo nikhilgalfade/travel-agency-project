@@ -1,0 +1,66 @@
+.About-container {
+  width: 100%;
+}
+
+/* Flex layout: image left, content right */
+.About-section {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Left image */
+.About-image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Right content floats over the sky of the photo */
+.About-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  color: #1e293b;
+  background: transparent; /* no solid block color */
+}
+
+/* Optional gradient fading on right side, only if needed */
+.About-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%; /* start fading from middle */
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(135,206,235,0.5), #f8fafc00);
+  pointer-events: none;
+}
+
+/* Text */
+.About-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.About-content p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .About-section {
+    flex-direction: column;
+  }
+
+  .About-image {
+    height: 50vh;
+  }
+
+  .About-content {
+    padding: 30px;
+  }
+}

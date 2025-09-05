@@ -1,4 +1,4 @@
-.About-container {
+/*.About-container {
   width: 100%;
 }
 
@@ -57,10 +57,10 @@
   }
 
   .About-image {
-    height: 50vh;
+    height: 0vh;
   }
 
   .About-content {
     padding: 30px;
   }
-}
+}*/

@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import coverImg from "../../assets/cover2.jpg";
 import "./Aboutus.css";
 
@@ -24,4 +24,4 @@ export default function Aboutus() {
       </section>
     </div>
   );
-}
+}*/

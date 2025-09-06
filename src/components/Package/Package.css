@@ -1,0 +1,17 @@
+.Package-section{
+padding: 80px 20px;
+  background-color: #f8fafc; /* light background */
+  text-align: center;}
+
+  .package-header{
+    font-size: 4rem !important;
+  }
+
+.package-subtitle{
+    font-size: 2rem !important;
+}
+
+  .package-title{
+    font-family: 'Segoe UI';
+    font-size: 0.8rem !important;
+  }

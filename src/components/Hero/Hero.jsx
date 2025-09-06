@@ -1,8 +1,8 @@
 import React from "react";
 import coverImg from "../../assets/cover.jpg";
-import TajImg from "../../assets/Taj.jpg";
-import Hawai from "../../assets/Hawai.jpg";
-import swissImg from "../../assets/Kerala.jpg";
+import TajImg from "../../assets/Taj2.jpg";
+import Hawai from "../../assets/Hawai2.jpg";
+import swissImg from "../../assets/Kerala2.jpg";
 import "./Hero.css";
 import { Typewriter } from "react-simple-typewriter";
 
@@ -98,3 +98,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

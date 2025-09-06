@@ -1,66 +1,76 @@
-/*.About-container {
-  width: 100%;
-}
-
-/* Flex layout: image left, content right */
-.About-section {
+.about-section {
   display: flex;
-  width: 100%;
-  min-height: 100vh;
-}
-
-/* Left image */
-.About-image {
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-}
-
-/* Right content floats over the sky of the photo */
-.About-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding: 60px;
-  color: #1e293b;
-  background: transparent; /* no solid block color */
+  background-color: #dae9f8; /* blue background */
+  padding: 50px;
+  height: 100vh; /* full page height */
+  color: black;
+}
+.about-us{
+  font-size:  1rem !important;;
+
+
+}
+.about-journey{
+  font-size: 4.5 !important;
 }
 
-/* Optional gradient fading on right side, only if needed */
-.About-content::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%; /* start fading from middle */
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(135,206,235,0.5), #f8fafc00);
-  pointer-events: none;
+.about-image img {
+  width: 400px;   /* control image size */
+  height: auto;   /* keep proportion */
+  //border-radius: 15px; /* optional rounded edges */
+  //box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Text */
-.About-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.about-content {
+  margin-left: 50px;
+  max-width: 500px;
 }
 
-.About-content p {
-  font-size: 1.2rem;
-  line-height: 1.7;
+.about-content h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .About-section {
-    flex-direction: column;
-  }
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
 
-  .About-image {
-    height: 0vh;
-  }
 
-  .About-content {
-    padding: 30px;
-  }
-}*/
+
+.learn-actions .learn-button {
+  display: inline-block;
+  padding: 13px 30px;
+  background-color: transparent;
+  color: #f9f9f9;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 2px solid white;
+  margin-right: 20px;
+  transition: all 0.3s ease;
+}
+
+.learn-button {
+  display: inline-block;
+  padding: 13px 30px;
+  background-color: #54add3;   /* sky blue button */
+  color: white;                /* text color */
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;                /* remove white border */
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.learn-button:hover {
+  background-color: #3a91b8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+

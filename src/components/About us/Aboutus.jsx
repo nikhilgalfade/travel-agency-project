@@ -16,10 +16,10 @@ export default function Aboutus() {
         <h1 className="about-journey">Your Journey, Our Passion</h1>
           
         
-        <h4 >We believe that travel is more than just visiting new places; it's about creating memories, experiencing diverse cultures, and discovering the wonders of the world. With years of experience in the travel industry, our dedicated team is committed to providing exceptional travel experiences tailored to your unique desires and needs.
+        <h4 className="about-discription" >We believe that travel is more than just visiting new places; it's about creating memories, experiencing diverse cultures, and discovering the wonders of the world. With years of experience in the travel industry, our dedicated team is committed to providing exceptional travel experiences tailored to your unique desires and needs.
         </h4>
 
-        <nav>
+        <nav className="order-list">
         <ol>✔ Budget-Friendly <ol/>
           <ol>✔ Luxurious Getaways</ol>
          ✔ Trusted Local Guides</ol>

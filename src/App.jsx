@@ -3,7 +3,9 @@ import Hero from "./components/Hero/Hero";
 import Sidebar from "./components/Navbar/Navbar";
 import Aboutus from "./components/About us/Aboutus";
 import Package from "./components/Package/Package"
-import WhyUs from "./components/Why us/whyus";
+import WhyUs from "./components/Whyus/whyus";
+import Testimonials from "./components/testimonial/Testimonials";
+import Ready from "./components/Ready/Ready";
 function App() {
   return (
     <div>
@@ -12,6 +14,8 @@ function App() {
       <Aboutus/>
       <Package/>
       <WhyUs/>
+      <Testimonials/>
+      <Ready/>
     </div>
   );
 }

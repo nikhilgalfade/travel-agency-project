@@ -12,7 +12,7 @@ export default function Aboutus() {
 
       {/* Right side text */}
       <div className="about-content">
-        <h1 className="about-us">ABOUT US</h1>
+        <h1 className="about-us">ABOUT </h1>
         <h1 className="about-journey">Your Journey, Our Passion</h1>
           
         
